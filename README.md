@@ -17,6 +17,7 @@ The goals / steps of this project are the following:
 [image4]: ./output_images/WarpedTestImage1.jpg
 [image5]: ./output_images/PolynomialTestImage1.jpg
 [image6]: ./output_images/PlottedBackTestImage1.jpg
+
 ---
 ### Camera Calibration and Undistort Image
 
