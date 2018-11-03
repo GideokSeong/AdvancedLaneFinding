@@ -17,7 +17,6 @@ The goals / steps of this project are the following:
 [image4]: ./output_images/WarpedTestImage1.jpg
 [image5]: ./output_images/PolynomialTestImage1.jpg
 [image6]: ./output_images/PlottedBackTestImage1.jpg
-[image7]: ./output_images/PlottedBackTestImage6.jpg
 ---
 ### Camera Calibration and Undistort Image
 
@@ -58,4 +57,3 @@ Once it finds non-zero points both coordination of x and y, it sets the area of 
 
 In this step, I am using the previous function which is ```leftx,lefty,rightx,righty,out_img = search_around_poly(top_down)```, but for the better ease of calculating offset from the center and curvature of the each lane, I separately implemented ```left_fitx, right_fitx, ploty, center_dist= poly(top_down)``` function. To apply pixel data into real world data, I use ```left,right = measure_curvature_real(out_img,leftx,lefty,rightx,righty)``` function. Once, I get the curvature and offset value, I draw the line onto the warped blank image.
 ![BinaryImage][image6]
-![BinaryImage][image7]
