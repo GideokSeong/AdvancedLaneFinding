@@ -58,3 +58,8 @@ Once it finds non-zero points both coordination of x and y, it sets the area of 
 
 In this step, I am using the previous function which is ```leftx,lefty,rightx,righty,out_img = search_around_poly(top_down)```, but for the better ease of calculating offset from the center and curvature of the each lane, I separately implemented ```left_fitx, right_fitx, ploty, center_dist= poly(top_down)``` function. To apply pixel data into real world data, I use ```left,right = measure_curvature_real(out_img,leftx,lefty,rightx,righty)``` function. Once, I get the curvature and offset value, I draw the line onto the warped blank image.
 ![BinaryImage][image6]
+
+
+### Discussion
+
+One thing I want to improve in this project is the efficient time. When I run this program, it took me around 10 minutes to process 50 seconds video. And also, To find proper lane line and understand that concepts, I had been hard time. However, finally I got used to the concept of it. 
